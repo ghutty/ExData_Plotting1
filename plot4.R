@@ -29,7 +29,7 @@ plot(hpcts$datetime, as.numeric(hpcts$Global_active_power), type="l", ylab="Glob
 plot(hpcts$datetime, as.numeric(hpcts$Sub_metering_1), type="l", ylab="Energy sub metering", xlab="")
 lines(hpcts$datetime, as.numeric(hpcts$Sub_metering_2), type="l", col="red")
 lines(hpcts$datetime, as.numeric(hpcts$Sub_metering_3), type="l", col="blue")
-legend("topright", colnames(hpcts)[8:10], lty=c(1,1,1), col=c("black", "red", "blue"))
+legend("topright", colnames(hpcts)[8:10], lty=c(1,1,1), col=c("black", "red", "blue"),bty="n")
 # plot1 col:2 row:1
 plot(hpcts$datetime, as.numeric(hpcts$Voltage), type="l", ylab="Voltage", xlab=colnames(hpcts)[1])
 # plot1 col:2 row:2
